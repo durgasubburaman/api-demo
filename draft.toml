@@ -1,0 +1,7 @@
+[environments]
+  [environments.development]
+    name = "giggly-zebra"
+    namespace = "default"
+    wait = false
+    watch = false
+    watch_delay = 2
