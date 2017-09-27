@@ -7,7 +7,7 @@ serviceType: ClusterIP
 servicePort: 80
 containerPort: 8080
 component: "api-demo"
-replicas: 3
+replicas: 1
 image: "jcorioland.azurecr.io/msexperiences/api-demo"
 imageTag: "latest"
 imagePullPolicy: "Always"
