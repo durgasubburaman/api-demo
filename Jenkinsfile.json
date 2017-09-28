@@ -1,10 +1,10 @@
 {
   "app": {
     "name": "api-demo",
-    "replicas": "3",
+    "replicas": "1",
     "cpu": "10m",
     "memory": "128Mi",
-    "test": false,
+    "test": true,
     "hostname": "api-demo.acs.juliencorioland.net"
   },
   "container_repo": {
