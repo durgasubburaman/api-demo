@@ -27,8 +27,6 @@ volumes:[
 
       container ('maven') {
         sh "mvn install"
-        
-        sh "ls -a ./target/"
       }
     }
 
@@ -76,8 +74,6 @@ volumes:[
     stage ('Build & Push Docker image') {
 
       container('docker') {
-
-        sh 'ls -a ./target'
 
         // perform docker login
         withCredentials([[$class          : 'UsernamePasswordMultiBinding', credentialsId: config.container_repo.jenkins_creds_id,
